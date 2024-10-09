@@ -33,6 +33,6 @@ COPY --from=build /app/dist /app/dist
 COPY --from=build /app/package.json /app/package.json
 
 EXPOSE 3000
-ENV PORT 3000
+ENV PORT=3000
 
 ENTRYPOINT [ "yarn", "start" ]

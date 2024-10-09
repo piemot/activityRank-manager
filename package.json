@@ -1,0 +1,8 @@
+{
+  "name": "activityrank-manager-monorepo",
+  "packageManager": "yarn@4.5.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
