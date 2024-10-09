@@ -1,0 +1,18 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "apps/api/config/keys.json",
+        "apps/api/config/keys.example.json"
+      ],
+      "url": "./.vscode/config/api/keys.schema.json"
+    },
+    {
+      "fileMatch": [
+        "apps/api/config/config.json",
+        "apps/api/config/config.example.json"
+      ],
+      "url": "./.vscode/config/api/config.schema.json"
+    }
+  ]
+}
