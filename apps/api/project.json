@@ -1,0 +1,19 @@
+{
+  "name": "manager",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/api/src",
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "node --enable-source-maps --watch dist/app.js",
+          "nx watch --projects=@activityrank/manager --includeDependentProjects -- nx run-many -t build -p \\$NX_PROJECT_NAME"
+        ],
+        "cwd": "apps/api",
+        "parallel": true
+      }
+    }
+  }
+}

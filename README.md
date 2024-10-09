@@ -34,6 +34,11 @@ Sharded bot capable of running in a distributed form across multiple servers.
 Thank you for deciding to contribute! Pull requests are welcome.
 For major changes, please open an issue first to discuss what you would like to change.
 
+### Running in Development
+```sh
+nx dev manager
+```
+
 ### Running with Docker
 
 We use Docker to run the manager in production.

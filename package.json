@@ -1,8 +1,24 @@
 {
-  "name": "activityrank-manager-monorepo",
+  "name": "@activtyrank/monorepo",
   "packageManager": "yarn@4.5.0",
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "onFail": "error"
+    }
+  },
+  "contributors": [
+    "@rapha01",
+    "@piemot"
+  ],
+  "devDependencies": {
+    "nx": "20.0.0"
+  }
 }
