@@ -35,5 +35,9 @@
       "src/**/*.ts"
     ]
   },
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "pnpm@9.12.1",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8"
+  }
 }
