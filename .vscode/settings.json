@@ -1,12 +1,12 @@
 {
   "json.schemas": [
     {
-      "fileMatch": ["config/keys.json", "config/keys.example.json"],
-      "url": "./config/keys.schema.json"
+      "fileMatch": ["apps/manager/config/keys.json", "apps/manager/config/keys.example.json"],
+      "url": "./.vscode/schemas/manager/keys.schema.json"
     },
     {
-      "fileMatch": ["config/config.json", "config/config.example.json"],
-      "url": "./config/config.schema.json"
+      "fileMatch": ["apps/manager/config/config.json", "apps/manager/config/config.example.json"],
+      "url": "./.vscode/schemas/manager/config.schema.json"
     }
-  ]
+  ],
 }
