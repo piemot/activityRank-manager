@@ -1,9 +1,8 @@
-Dockerfile
 .dockerignore
-node_modules
-npm-debug.log
 .git
-dist
-README.md
-docker
-config
+**/Dockerfile
+**/node_modules
+**/config
+**/dist
+**/docker/data
+*.md

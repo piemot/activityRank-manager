@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./dist/app.js",
     "dev": "node --enable-source-maps ./dist/app.js",
-    "dev:watch": "nodemon --exec \"yarn run build && yarn run dev\"",
+    "dev:watch": "nodemon --exec \"pnpm run build && pnpm run dev\"",
     "format": "prettier -w src",
     "typecheck": "tsc --noEmit",
     "build": "swc src --out-dir dist --copy-files --strip-leading-paths"
