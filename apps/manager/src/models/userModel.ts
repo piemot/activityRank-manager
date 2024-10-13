@@ -44,5 +44,5 @@ async function getDbHost(userId: string) {
     );
   }
 
-  return res[0].host;
+  return res[0]!.host;
 }

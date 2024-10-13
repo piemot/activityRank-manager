@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    // Assumes that apps use bundlers - whether that be vite or swc
+    "module": "preserve",
+    "noEmit": true
+  }
+}

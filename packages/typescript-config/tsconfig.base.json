@@ -1,0 +1,21 @@
+// Adapted from https://www.totaltypescript.com/tsconfig-cheat-sheet
+{
+  "compilerOptions": {
+    // Basic options
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "lib": ["es2022"], 
+
+    // Strictness
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "checkJs": true,
+  }
+}

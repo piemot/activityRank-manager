@@ -1,15 +1,4 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "Node",
-    "lib": ["WebWorker", "DOM", "DOM.Iterable"],
-    "strict": true,
-    "declaration": true,
-    "types": ["node"],
-    "outDir": "dist"
-  },
+  "extends": "@activityrank/typescript-config/tsconfig.app.json",
   "include": ["src"]
 }

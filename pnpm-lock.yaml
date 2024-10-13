@@ -8,8 +8,11 @@ importers:
 
   .:
     devDependencies:
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
       typescript:
-        specifier: ^5.4.4
+        specifier: ^5.6.3
         version: 5.6.3
 
   apps/manager:
@@ -19,13 +22,13 @@ importers:
         version: 1.13.2(hono@4.6.4)
       '@hono/zod-validator':
         specifier: ^0.2.2
-        version: 0.2.2(hono@4.6.4)(zod@3.23.8)
+        version: 0.4.1(hono@4.6.4)(zod@3.23.8)
       '@sapphire/snowflake':
         specifier: ^3.2.2
         version: 3.5.3
       '@swc/cli':
         specifier: ^0.4.0
-        version: 0.4.0(@swc/core@1.7.35)(chokidar@3.6.0)
+        version: 0.4.1-nightly.20240914(@swc/core@1.7.35)(chokidar@3.6.0)
       '@swc/core':
         specifier: ^1.7.22
         version: 1.7.35
@@ -45,9 +48,18 @@ importers:
         specifier: ^3.23.8
         version: 3.23.8
     devDependencies:
+      '@activityrank/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
       nodemon:
         specifier: ^3.1.4
         version: 3.1.7
+      typescript:
+        specifier: ^5.4.4
+        version: 5.6.3
+
+  packages/typescript-config:
+    dependencies:
       typescript:
         specifier: ^5.4.4
         version: 5.6.3
@@ -60,8 +72,8 @@ packages:
     peerDependencies:
       hono: ^4
 
-  '@hono/zod-validator@0.2.2':
-    resolution: {integrity: sha512-dSDxaPV70Py8wuIU2QNpoVEIOSzSXZ/6/B/h4xA7eOMz7+AarKTSGV8E6QwrdcCbBLkpqfJ4Q2TmBO0eP1tCBQ==}
+  '@hono/zod-validator@0.4.1':
+    resolution: {integrity: sha512-I8LyfeJfvVmC5hPjZ2Iij7RjexlgSBT7QJudZ4JvNPLxn0JQ3sqclz2zydlwISAnw21D2n4LQ0nfZdoiv9fQQA==}
     peerDependencies:
       hono: '>=3.9.0'
       zod: ^3.19.1
@@ -190,8 +202,8 @@ packages:
     resolution: {integrity: sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==}
     engines: {node: '>=10'}
 
-  '@swc/cli@0.4.0':
-    resolution: {integrity: sha512-4JdVrPtF/4rCMXp6Q1h5I6YkYZrCCcqod7Wk97ZQq7K8vNGzJUryBv4eHCvqx5sJOJBrbYm9fcswe1B0TygNoA==}
+  '@swc/cli@0.4.1-nightly.20240914':
+    resolution: {integrity: sha512-mpsF0+pq40uu9nZnhkzaA0gdivORTZnJNUFfuUGEzC1DgEEgmKDgisRWpBgA3p7xQPCpYlhkH5cTbsOkqar2Mg==}
     engines: {node: '>= 16.14.0'}
     hasBin: true
     peerDependencies:
@@ -670,6 +682,11 @@ packages:
   piscina@4.7.0:
     resolution: {integrity: sha512-b8hvkpp9zS0zsfa939b/jXbe64Z2gZv0Ha7FYPNUiDIB1y2AtxcOZdfP8xN8HFjUaqQiT9gRlfjAsoL8vdJ1Iw==}
 
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
@@ -865,7 +882,7 @@ snapshots:
     dependencies:
       hono: 4.6.4
 
-  '@hono/zod-validator@0.2.2(hono@4.6.4)(zod@3.23.8)':
+  '@hono/zod-validator@0.4.1(hono@4.6.4)(zod@3.23.8)':
     dependencies:
       hono: 4.6.4
       zod: 3.23.8
@@ -965,7 +982,7 @@ snapshots:
 
   '@sindresorhus/is@4.6.0': {}
 
-  '@swc/cli@0.4.0(@swc/core@1.7.35)(chokidar@3.6.0)':
+  '@swc/cli@0.4.1-nightly.20240914(@swc/core@1.7.35)(chokidar@3.6.0)':
     dependencies:
       '@mole-inc/bin-wrapper': 8.0.1
       '@swc/core': 1.7.35
@@ -1429,6 +1446,8 @@ snapshots:
   piscina@4.7.0:
     optionalDependencies:
       '@napi-rs/nice': 1.0.1
+
+  prettier@3.3.3: {}
 
   process-nextick-args@2.0.1: {}
 

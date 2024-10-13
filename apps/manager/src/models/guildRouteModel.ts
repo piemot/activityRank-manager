@@ -12,5 +12,5 @@ export async function get(guildId: string) {
     );
   }
 
-  return res[0].host;
+  return res[0]!.host;
 }

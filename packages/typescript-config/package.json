@@ -1,0 +1,7 @@
+{
+  "name": "@activityrank/typescript-config",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.4.4"
+  }
+}
