@@ -7,6 +7,9 @@ import { runResetByTime } from './models/resetModel.js';
 import { runPatreonTask } from './tasks/patreon.js';
 import { runTopggTask } from './tasks/topgg.js';
 import { apiRouter } from './routes/api.js';
+import { plusOne } from '@activityrank/addition';
+
+console.log('one plus one is', plusOne(1))
 
 const app = new Hono();
 

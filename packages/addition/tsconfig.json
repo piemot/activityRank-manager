@@ -1,0 +1,6 @@
+{
+  "extends": "@activityrank/typescript-config/tsconfig.lib.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  }
+}

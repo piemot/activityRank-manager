@@ -1,0 +1,14 @@
+{
+  "name": "@activityrank/addition",
+  "description": "A test package to ensure connections work",
+  "license": "MIT",
+  "type": "module",
+  "exports": "./dist/src/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@activityrank/typescript-config": "workspace:*",
+    "typescript": "^5.4.4"
+  }
+}
