@@ -1,8 +1,14 @@
 {
+  "name": "activityrank",
   "private": true,
   "type": "module",
+  "scripts": {
+    "update": "pnpm update -r --interactive --latest",
+    "clean": "rm -r ./**/.turbo ./**/dist"
+  },
   "devDependencies": {
     "prettier": "^3.3.3",
+    "turbo": "^2.2.3",
     "typescript": "^5.6.3"
   },
   "prettier": {
